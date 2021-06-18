@@ -2,6 +2,7 @@ body {
   margin-bottom: 300px;
 }
 input[type="search"] {
+  color: white;
   padding-left: 10px;
   border: solid 1px white;
   background-color: transparent;
