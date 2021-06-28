@@ -73,6 +73,7 @@ footer {
   line-height: 15px;
 }
 .currentWeatherIcon {
+  width: 140px;
   margin-top: 40px;
   margin-left: 20px;
   font-size: 140px;
