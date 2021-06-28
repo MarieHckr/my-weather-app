@@ -99,3 +99,16 @@ searchCity("Paris");
 //Current location
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+//fahrenheit
+function showFahrenheitTemperature(event) {
+  event.preventDefault();
+
+  let fahrenheitTemperature = (20 * 9) / 5 + 32;
+
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
