@@ -50,7 +50,7 @@
             <div class="col">
               <span class="currentTemp" id="temperature"></span>
               <span class="celsius"
-                ><a href="#" class="link" id="celsius">°C</a></span
+                ><a href="#" class="link active" id="celsius">°C</a></span
               >
               <span class="pipe">|</span>
               <span class="fahrenheit"
@@ -60,70 +60,26 @@
                 <h2 id="temperature-description"></h2>
                 <li>
                   Wind:
+                  <strong>
                   <span id="wind-speed"></span>
+                   </strong>
                   km/h
+                 
                 </li>
                 <li>
                   Humidity:
+                  <strong>
                   <span id="humidity"> </span>
+                  </strong>
                   %
                 </li>
               </ul>
             </div>
           </div>
           <hr />
-          <div class="row">
-            <div class="col separation">
-              <ul class="forecastPrecisions">
-                <li>Mon</li>
-                <li>
-                  <i class="fas fa-cloud-showers-heavy forecastIcon"> </i>
-                </li>
-                <li class="forecastTemp">
-                  <span class="dayForecastTemperature">20°</span> 14°
-                </li>
-              </ul>
-            </div>
-            <div class="col separation">
-              <ul class="forecastPrecisions">
-                <li>Tue</li>
-                <li><i class="fas fa-cloud forecastIcon"> </i></li>
-                <li class="forecastTemp">
-                  <span class="dayForecastTemperature">20°</span> 14°
-                </li>
-              </ul>
-            </div>
-            <div class="col separation">
-              <ul class="forecastPrecisions">
-                <li>Wed</li>
-                <li><i class="fas fa-bolt forecastIcon"> </i></li>
-                <li class="forecastTemp">
-                  <span class="dayForecastTemperature">20°</span> 14°
-                </li>
-              </ul>
-            </div>
-            <div class="col separation">
-              <ul class="forecastPrecisions">
-                <li>Thu</li>
-                <li><i class="fas fa-cloud-sun forecastIcon"> </i></li>
-                <li class="forecastTemp">
-                  <span class="dayForecastTemperature">20°</span> 14°
-                </li>
-              </ul>
-            </div>
-            <div class="col">
-              <ul class="forecastPrecisions">
-                <li>Fri</li>
-                <li><i class="fas fa-cloud-sun forecastIcon"> </i></li>
-                <li class="forecastTemp">
-                  <span class="dayForecastTemperature">20°</span> 14°
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer>
+          <div id="forecast"></div>
+    </div>
+    <footer>
         <a
           href="https://github.com/MarieHckr/my-weather-app"
           target="_blank"
@@ -132,7 +88,6 @@
         >
         by Marie Hacker
       </footer>
-    </div>
     <script src="src/index2.js"></script>
   </body>
 </html>

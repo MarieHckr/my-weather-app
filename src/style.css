@@ -79,9 +79,7 @@ footer {
   margin-left: 20px;
   font-size: 140px;
 }
-.separation {
-  border-right: white solid 1px;
-}
+
 .currentTemp {
   font-size: 60px;
 }
@@ -100,7 +98,7 @@ footer {
   transition: all 150ms ease-in-out;
 }
 .link:hover {
-  cursor: pointer;
+  cursor: default;
   color: #ef4a73;
   font-weight: bold;
 }

@@ -39,7 +39,38 @@ function formatDate(timestamp) {
   let day = days[dayIndex];
   let month = months[monthIndex];
 
-  return `${day} ${dateElement} ${month} ${year} | ${hours}:${minutes}`;
+  return `Last updated: ${day} ${dateElement} ${month} ${year} | ${hours}:${minutes}`;
+}
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thur", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` 
+         
+            <div class="col separation">
+              <ul class="forecastPrecisions">
+                <li>${day}</li>
+                <li>
+                  <i class="fas fa-cloud-showers-heavy forecastIcon"> </i>
+                </li>
+                <li class="forecastTemp">
+                  <span class="dayForecastTemperature">20°</span> 14°
+                </li>
+              </ul>
+            </div>
+           
+            
+           
+      `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
 
 function displayTemperature(response) {
@@ -102,3 +133,5 @@ let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Paris");
+
+displayForecast();
