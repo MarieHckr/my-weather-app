@@ -4,6 +4,7 @@ body {
 }
 input[type="search"] {
   color: white;
+  margin-top: 7px;
   padding-left: 10px;
   border: solid 1px white;
   background-color: transparent;
@@ -20,7 +21,7 @@ button {
   transition: all 200ms ease-in-out;
 }
 button:hover {
-  color: #ef4a73;
+  color: #318ce7;
 }
 h1 {
   font-size: 40px;
@@ -48,7 +49,7 @@ hr {
 }
 
 footer {
-  color: #ff6d95;
+  color: #318ce7;
   opacity: 0.8;
   margin-top: 6px;
   font-size: 11px;
@@ -60,7 +61,11 @@ footer {
 }
 
 .weatherApp {
-  background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
+  background: linear-gradient(
+    112.1deg,
+    rgb(32, 38, 57) 11.4%,
+    rgb(63, 76, 119) 70.2%
+  );
   box-shadow: 0px 3px 12px 0.3px rgba(0, 0, 0, 0.3);
   display: block;
   margin: 0 auto;
@@ -99,7 +104,7 @@ footer {
 }
 .link:hover {
   cursor: default;
-  color: #ef4a73;
+  color: #318ce7;
   font-weight: bold;
 }
 
@@ -130,9 +135,9 @@ footer {
 }
 .githubLink {
   text-decoration: none;
-  color: #700c12;
+  color: #202639;
   transition: all 150ms ease-in-out;
 }
 .githubLink:hover {
-  color: #ef4a73;
+  color: #318ce7;
 }
