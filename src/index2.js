@@ -8,7 +8,6 @@ function formatDate(timestamp) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-  let dayIndex = date.getDay();
 
   let days = [
     "Sunday",
@@ -19,33 +18,16 @@ function formatDate(timestamp) {
     "Friday",
     "Saturday",
   ];
-  let monthIndex = date.getMonth();
-  let months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-  let dateElement = date.getDate();
-  let year = date.getFullYear();
-  let day = days[dayIndex];
-  let month = months[monthIndex];
+  let day = days[date.getDay()];
 
-  return `Last updated: ${day} ${dateElement} ${month} ${year} | ${hours}:${minutes}`;
+  return `Last update : ${day}  ${hours}:${minutes}`;
 }
 
-function formatDay(timeStamp) {
-  let date = new Date(timeStamp * 1000);
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
   let day = date.getDay();
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thi", "Fri", "Sat"];
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
   return days[day];
 }
 function searchLocation(position) {
