@@ -20,7 +20,27 @@ function formatDate(timestamp) {
   ];
   let day = days[date.getDay()];
 
-  return `Last update : ${day}  ${hours}:${minutes}`;
+  let monthIndex = date.getMonth();
+  let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  let todaydate = date.getDate();
+  let year = date.getFullYear();
+
+  let month = months[monthIndex];
+  return `Last update : ${day}, ${todaydate} ${month} ${year} | ${hours}:${minutes}`;
 }
 
 function formatDay(timestamp) {
