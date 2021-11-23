@@ -5,6 +5,7 @@ body {
 input[type="search"] {
   color: white;
   margin-top: 7px;
+  margin-bottom: 5px;
   padding-left: 10px;
   border: solid 1px white;
   background-color: transparent;
@@ -25,13 +26,12 @@ button:hover {
 }
 h1 {
   font-size: 40px;
-
-  margin-top: 15px;
-  margin-bottom: 0;
+  margin-top: 5px;
 }
 h2 {
+  margin-left: -4px;
   font-size: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 19px;
 }
 small {
   position: relative;
@@ -76,16 +76,21 @@ footer {
   padding: 15px 15px 30px 15px;
 }
 .cityDate {
-  line-height: 15px;
+  margin-left: 5px;
+  margin-bottom: 24px;
+  line-height: 10px;
 }
+
 .currentWeatherIcon {
-  width: 140px;
-  margin-top: 40px;
-  margin-left: 20px;
+  width: 174px;
+
+  margin-left: 28px;
   font-size: 140px;
 }
 
 .currentTemp {
+  position: relative;
+  right: 7px;
   font-size: 60px;
 }
 
@@ -110,7 +115,6 @@ footer {
 
 .currentPrecisions {
   font-size: 13px;
-
   list-style-type: none;
   padding: 0;
 }
