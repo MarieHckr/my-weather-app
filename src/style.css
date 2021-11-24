@@ -3,6 +3,7 @@ body {
   margin-bottom: 300px;
 }
 input[type="search"] {
+  padding-right: 90px;
   color: white;
   margin-top: 7px;
   margin-bottom: 5px;
@@ -88,7 +89,7 @@ footer {
   margin-top: 10px;
   margin-left: 5px;
   margin-bottom: 24px;
-  line-height: 20px;
+  line-height: 27px;
 }
 
 .currentWeatherIcon {
