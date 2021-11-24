@@ -3,7 +3,8 @@ body {
   margin-bottom: 300px;
 }
 input[type="search"] {
-  padding-right: 90px;
+  size: 20px;
+  padding-right: 9px;
   color: white;
   margin-top: 7px;
   margin-bottom: 5px;
