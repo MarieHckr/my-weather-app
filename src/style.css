@@ -72,13 +72,14 @@ footer {
   display: block;
   margin: 0 auto;
 
-  max-width: 400px;
+  max-width: 380px;
   border: 1px solid;
   border-radius: 20px;
   padding: 15px 15px 30px 15px;
 }
 
 .countryCode {
+  font-weight: lighter;
   display: inline;
   position: relative;
   left: 5px;
@@ -93,7 +94,7 @@ footer {
 .currentWeatherIcon {
   width: 174px;
 
-  margin-left: 28px;
+  margin-left: 19px;
   font-size: 140px;
 }
 
