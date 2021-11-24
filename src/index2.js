@@ -116,6 +116,7 @@ function getForecast(coordinates) {
 }
 
 function displayTemperature(response) {
+  console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
   let cityElment = document.querySelector("#city");
   let description = document.querySelector("#temperature-description");
@@ -124,9 +125,9 @@ function displayTemperature(response) {
   let dateElement = document.querySelector("#date");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   let iconElement = document.querySelector("#icon");
+  let countryCode = document.querySelector("#country-code");
 
   celsiusTemperature = response.data.main.temp;
-
   cityElment.innerHTML = response.data.name;
   description.innerHTML = response.data.weather[0].main;
   humidityElement.innerHTML = Math.round(response.data.main.humidity);
@@ -137,6 +138,7 @@ function displayTemperature(response) {
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.des);
+  countryCode.innerHTML = response.data.sys.country;
 
   getForecast(response.data.coord);
 }

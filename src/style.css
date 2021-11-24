@@ -25,6 +25,7 @@ button:hover {
   color: #0c4d8e;
 }
 h1 {
+  display: inline;
   font-size: 40px;
   margin-top: 5px;
 }
@@ -34,6 +35,7 @@ h2 {
   margin-bottom: 19px;
 }
 small {
+  display: block;
   position: relative;
   left: 2px;
   opacity: 0.6;
@@ -75,10 +77,17 @@ footer {
   border-radius: 20px;
   padding: 15px 15px 30px 15px;
 }
+
+.countryCode {
+  display: inline;
+  position: relative;
+  left: 5px;
+}
 .cityDate {
+  margin-top: 10px;
   margin-left: 5px;
   margin-bottom: 24px;
-  line-height: 10px;
+  line-height: 20px;
 }
 
 .currentWeatherIcon {
